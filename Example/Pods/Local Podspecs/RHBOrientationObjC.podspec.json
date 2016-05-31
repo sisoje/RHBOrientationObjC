@@ -1,7 +1,7 @@
 {
   "name": "RHBOrientationObjC",
   "version": "0.1.0",
-  "summary": "Easy to use library for estimating device orientation based on accelerometer data.",
+  "summary": "Estiamting device orientation based on accelerometer data.",
   "description": "Easy to use library for estimating device orientation based on accelerometer data.",
   "homepage": "https://github.com/sisoje/RHBOrientationObjC",
   "license": {
