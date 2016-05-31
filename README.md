@@ -9,11 +9,22 @@ RHBOrientation is an easy to use and customizable Objective-C library for estima
 
 Orientation detection uses PROPERLY designed "orientation snapping" algorithm with customizable z-axis and orientation snapping treshold value.
 
+## Usage
+Initialize orientation detection (for example in viewDidLoad) in your view controller:
+
+    self.orienter = [RHBOrienter new];
+    self.orienter.delegate = self;
+
+Obtain orientation anytime using:
+
+	self.orienter.deviceOrientation
+	
+Optionally implement delegate method to get notifications whenever orientation changes.
+
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
 
 ## Installation
 
