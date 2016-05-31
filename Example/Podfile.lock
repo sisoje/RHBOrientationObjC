@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  RHBOrientationObjC: d3a81d6d3aaecaea187b94a4a868d6387c5a2b9f
+  RHBOrientationObjC: a9bcc9c1218d7638542e228d5df668ad2d8c3b2c
 
 PODFILE CHECKSUM: fd178ae424f965e4041f29b00afd82b5ae76de22
 

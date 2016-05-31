@@ -1,18 +1,18 @@
 {
   "name": "RHBOrientationObjC",
   "version": "0.1.0",
-  "summary": "A short description of RHBOrientationObjC.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/RHBOrientationObjC",
+  "summary": "Easy to use library for estimating device orientation based on accelerometer data.",
+  "description": "Easy to use library for estimating device orientation based on accelerometer data.",
+  "homepage": "https://github.com/sisoje/RHBOrientationObjC",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "Lazar Otasevic": "lazar.otasevic@1und1.de"
+    "Lazar Otasevic": "redhotbits@gmail.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/RHBOrientationObjC.git",
+    "git": "https://github.com/sisoje/RHBOrientationObjC.git",
     "tag": "0.1.0"
   },
   "platforms": {
