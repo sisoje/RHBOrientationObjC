@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'RHBOrientationObjC'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of RHBOrientationObjC.'
+  s.summary          = 'Easy to use device orientation based on accelerometer data.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,16 +17,16 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
+  s.description      = <<-DESC Easy to use device orientation based on accelerometer data.
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/RHBOrientationObjC'
+  s.homepage         = 'https://github.com/sisoje/RHBOrientationObjC'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Lazar Otasevic' => 'lazar.otasevic@1und1.de' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/RHBOrientationObjC.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'Lazar Otasevic' => 'redhotbits@gmail.com' }
+  s.source           = { :git => 'https://github.com/sisoje/RHBOrientationObjC.git', :tag => s.version.to_s }
+  # s.social_media_url = 'https://twitter.com/redhotbits'
 
   s.ios.deployment_target = '8.0'
 

@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02886890F9D82C926697F06764C0D967 /* RHBOrientationObjC-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 82A3E95A31DF1C22F247AB28D9E144D3 /* RHBOrientationObjC-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2165114A81D8607F09BA69D6ED59DDF8 /* Pods-RHBOrientationObjC_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F2BE09CA49690F7AFEC6298A83A2E0D7 /* Pods-RHBOrientationObjC_Tests-dummy.m */; };
 		23EEAC027C7C21CA4F1E2FC7C60BE5F9 /* Pods-RHBOrientationObjC_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 808EC926E387D218D5E16DCD530F10E2 /* Pods-RHBOrientationObjC_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25F1E14B3BCE576B46F4E808E9AE080F /* RHBOrientationObjC-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 82A3E95A31DF1C22F247AB28D9E144D3 /* RHBOrientationObjC-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		500BEED6DB8612AEA2BB9DD0896D171B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		6CD403E901F62F70B88D1DF9C7C04FC8 /* RHBOrientationObjC-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 890B18CD78AE72F90288EFBCAAD534CC /* RHBOrientationObjC-dummy.m */; };
-		9726F711A44260B622CA5B8004C9D909 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8BC614620E54967EAEE84E6110803A /* ReplaceMe.m */; };
+		6D84153216E3776A1FC748B81FAAD8FC /* RHBOrientationObjC-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 890B18CD78AE72F90288EFBCAAD534CC /* RHBOrientationObjC-dummy.m */; };
+		955C654E2503DE0701F466C3A86BEF92 /* RHBOrienter.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B4E40756B2EE2B284A313B734AA48A /* RHBOrienter.m */; };
 		9AF61F91A61172EF453F97DCE289DD9F /* Pods-RHBOrientationObjC_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D1E8F5C31FA01603A18CE03DBE553844 /* Pods-RHBOrientationObjC_Example-dummy.m */; };
+		C6AED458CD14C25728F9D9EA8657073E /* RHBOrienter.h in Headers */ = {isa = PBXBuildFile; fileRef = D87B33854093529CAA00155594E86227 /* RHBOrienter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D017BFDE1F951FC02C83A38DAF302D60 /* Pods-RHBOrientationObjC_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E36156F613CFE8F329E76776F084604 /* Pods-RHBOrientationObjC_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E66117D1D267156A14692323DCDA8315 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		F1CAAF7947AC17017AE1858D0870D7FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
@@ -40,7 +41,6 @@
 		3E1E23BE13C0A8A9E7FAF11FF819980B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E2696DAE72884DC35A60BCF5752AA8A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E36156F613CFE8F329E76776F084604 /* Pods-RHBOrientationObjC_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RHBOrientationObjC_Tests-umbrella.h"; sourceTree = "<group>"; };
-		4F8BC614620E54967EAEE84E6110803A /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReplaceMe.m; sourceTree = "<group>"; };
 		512828FECD3DB6331D15A4093AAC6B8F /* Pods-RHBOrientationObjC_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RHBOrientationObjC_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		565A202B92537A4CF2B3BC04BE5A7C20 /* Pods-RHBOrientationObjC_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RHBOrientationObjC_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		577F3E8BCC4A3EFDBED599EB17419ED5 /* Pods-RHBOrientationObjC_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RHBOrientationObjC_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -56,7 +56,9 @@
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D133FFFC78C621DCC6E2E901C5077FF9 /* Pods-RHBOrientationObjC_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RHBOrientationObjC_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		D1E8F5C31FA01603A18CE03DBE553844 /* Pods-RHBOrientationObjC_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RHBOrientationObjC_Example-dummy.m"; sourceTree = "<group>"; };
+		D87B33854093529CAA00155594E86227 /* RHBOrienter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RHBOrienter.h; sourceTree = "<group>"; };
 		E6A6CAB493CCFA3949F6699F88730C11 /* Pods-RHBOrientationObjC_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RHBOrientationObjC_Example.modulemap"; sourceTree = "<group>"; };
+		E9B4E40756B2EE2B284A313B734AA48A /* RHBOrienter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RHBOrienter.m; sourceTree = "<group>"; };
 		F2BE09CA49690F7AFEC6298A83A2E0D7 /* Pods-RHBOrientationObjC_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RHBOrientationObjC_Tests-dummy.m"; sourceTree = "<group>"; };
 		F35D1386BC009A80F97D17FDE1D2BF6E /* Pods-RHBOrientationObjC_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RHBOrientationObjC_Example.release.xcconfig"; sourceTree = "<group>"; };
 		FA4F2BC451F772C7629AC8425997728E /* Pods-RHBOrientationObjC_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RHBOrientationObjC_Tests.modulemap"; sourceTree = "<group>"; };
@@ -92,14 +94,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		03D43FF2876DCD946C0224439E606D7E /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				4F8BC614620E54967EAEE84E6110803A /* ReplaceMe.m */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		3B544002353663D209C3C59924BDB769 /* Pods-RHBOrientationObjC_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +134,15 @@
 			path = "Example/Pods/Target Support Files/RHBOrientationObjC";
 			sourceTree = "<group>";
 		};
+		738627EC8F4AA0F53EADEAF94422F41C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D87B33854093529CAA00155594E86227 /* RHBOrienter.h */,
+				E9B4E40756B2EE2B284A313B734AA48A /* RHBOrienter.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
@@ -149,14 +152,6 @@
 				FA72E8CDEC5328DBA1664310F165766F /* Products */,
 				DEDC2E7327B2EAC110903CFB083B28C0 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		AEC84BF4F283E72B7C15BD5B9BF55B45 /* RHBOrientationObjC */ = {
-			isa = PBXGroup;
-			children = (
-				03D43FF2876DCD946C0224439E606D7E /* Classes */,
-			);
-			path = RHBOrientationObjC;
 			sourceTree = "<group>";
 		};
 		BC1627745F2011C5B605EF9BAE51F195 /* Development Pods */ = {
@@ -184,10 +179,18 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		E5B06E86C7BEBB61290A9B869A773366 /* RHBOrientationObjC */ = {
+			isa = PBXGroup;
+			children = (
+				738627EC8F4AA0F53EADEAF94422F41C /* Classes */,
+			);
+			path = RHBOrientationObjC;
+			sourceTree = "<group>";
+		};
 		E9B4BCCDC7189D1192F862E3030DAEA1 /* RHBOrientationObjC */ = {
 			isa = PBXGroup;
 			children = (
-				AEC84BF4F283E72B7C15BD5B9BF55B45 /* RHBOrientationObjC */,
+				E5B06E86C7BEBB61290A9B869A773366 /* RHBOrientationObjC */,
 				570B8AAFE87192E2B73D9ED10DFF38C3 /* Support Files */,
 			);
 			name = RHBOrientationObjC;
@@ -233,11 +236,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AF9C96E4D9CE22A42A8123AEB7CD7DE8 /* Headers */ = {
+		A5907B721F8F267180517D9DC0F7E59A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02886890F9D82C926697F06764C0D967 /* RHBOrientationObjC-umbrella.h in Headers */,
+				25F1E14B3BCE576B46F4E808E9AE080F /* RHBOrientationObjC-umbrella.h in Headers */,
+				C6AED458CD14C25728F9D9EA8657073E /* RHBOrienter.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,9 +260,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA0E9D2180447A654B26FBFDF445081E /* Build configuration list for PBXNativeTarget "RHBOrientationObjC" */;
 			buildPhases = (
-				82400D01DECB3F12AB0CAC72CEFCF07F /* Sources */,
+				646FC9988F65036597DC29F35610E94F /* Sources */,
 				BFE49FA501335C137AB9D32878F84DA8 /* Frameworks */,
-				AF9C96E4D9CE22A42A8123AEB7CD7DE8 /* Headers */,
+				A5907B721F8F267180517D9DC0F7E59A /* Headers */,
 			);
 			buildRules = (
 			);
@@ -341,12 +345,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		82400D01DECB3F12AB0CAC72CEFCF07F /* Sources */ = {
+		646FC9988F65036597DC29F35610E94F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9726F711A44260B622CA5B8004C9D909 /* ReplaceMe.m in Sources */,
-				6CD403E901F62F70B88D1DF9C7C04FC8 /* RHBOrientationObjC-dummy.m in Sources */,
+				6D84153216E3776A1FC748B81FAAD8FC /* RHBOrientationObjC-dummy.m in Sources */,
+				955C654E2503DE0701F466C3A86BEF92 /* RHBOrienter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
