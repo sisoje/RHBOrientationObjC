@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'RHBOrientationObjC'
   s.version          = '0.1.2'
-  s.summary          = 'Estimating device orientation based on accelerometer data with proper "orientation snapping" functionality. Suitable for camera, photo and other applications.'
+  s.summary          = 'Estimating device orientation based on accelerometer data with "orientation snapping". Great for camera and photo apps.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
