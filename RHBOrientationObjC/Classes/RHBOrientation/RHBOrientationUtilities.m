@@ -39,20 +39,17 @@
     return self;
 }
 
-+ (instancetype)instance {
++ (instancetype)sharedInstance {
     
-    static id instance = nil;
-    if (!instance) {
-        
-        instance = [self new];
-    }
-    
-    return instance;
+    static dispatch_once_t pred;
+    static id sharedObject;
+    dispatch_once(&pred, ^{sharedObject = [self new];});
+    return sharedObject;
 }
 
 + (CGFloat)rotationAngleWithDeviceOrientation:(UIDeviceOrientation)deviceOrientation {
     
-    NSNumber *rotationAngle = [RHBOrientationUtilities instance].rotationAngleByDeviceOrientation[@(deviceOrientation)];
+    NSNumber *rotationAngle = [RHBOrientationUtilities sharedInstance].rotationAngleByDeviceOrientation[@(deviceOrientation)];
     NSAssert(rotationAngle, @"has to be maped");
     
     return rotationAngle.floatValue;
@@ -60,7 +57,7 @@
 
 + (AVCaptureVideoOrientation)videoOrientationWithDeviceOrientation:(UIDeviceOrientation)deviceOrientation {
     
-    NSNumber *videoOrientation = [RHBOrientationUtilities instance].videoOrientationByDeviceOrientation[@(deviceOrientation)];
+    NSNumber *videoOrientation = [RHBOrientationUtilities sharedInstance].videoOrientationByDeviceOrientation[@(deviceOrientation)];
     NSAssert(videoOrientation, @"has to be maped");
     
     return videoOrientation.integerValue;

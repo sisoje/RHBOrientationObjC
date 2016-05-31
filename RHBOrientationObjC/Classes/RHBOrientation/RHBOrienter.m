@@ -31,6 +31,8 @@
 
 - (instancetype)initWithInitialOrientation:(UIDeviceOrientation)initialOrientation zAxisThreshold:(double)zAxisThreshold snappingAngle:(double)snappingAngle {
     
+    NSAssert(([@[@(UIDeviceOrientationPortrait), @(UIDeviceOrientationLandscapeRight), @(UIDeviceOrientationLandscapeLeft), @(UIDeviceOrientationPortraitUpsideDown)] containsObject:@(initialOrientation)]), @"has to be valid orientation");
+             
     if (self = [super init]) {
         
         _zAxisThreshold = zAxisThreshold;
@@ -155,19 +157,6 @@
 - (void)dealloc {
     
     [self.motionManager stopAccelerometerUpdates];
-}
-
-+ (CGAffineTransform)transformWithDeviceOrientation:(UIDeviceOrientation)videoOrientation {
-    
-    NSDictionary *rots = @{@(UIDeviceOrientationPortrait) : @(0),
-                           @(UIDeviceOrientationLandscapeLeft) : @(M_PI_2),
-                           @(UIDeviceOrientationLandscapeRight) : @(-M_PI_2),
-                           @(UIDeviceOrientationPortraitUpsideDown) : @(M_PI)};
-    
-    NSNumber *rot = rots[@(videoOrientation)];
-    NSAssert(rot, @"has to be maped");
-    
-    return CGAffineTransformMakeRotation(rot.doubleValue);
 }
 
 @end
