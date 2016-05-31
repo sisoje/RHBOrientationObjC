@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="whP-gf-Uak">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="whP-gf-Uak">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,12 +16,39 @@
                     <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" image="badgeja" translatesAutoresizingMaskIntoConstraints="NO" id="Z2f-Tb-FaT">
+                                <rect key="frame" x="150" y="150" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="2y4-9m-T78"/>
+                                    <constraint firstAttribute="width" constant="300" id="YEG-KM-Vvu"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rotate your device" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdA-9H-A7E">
+                                <rect key="frame" x="228.5" y="129" width="143" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Z2f-Tb-FaT" firstAttribute="top" secondItem="wdA-9H-A7E" secondAttribute="bottom" id="1K0-nk-EqK"/>
+                            <constraint firstItem="Z2f-Tb-FaT" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="Fht-5b-oGW"/>
+                            <constraint firstItem="Z2f-Tb-FaT" firstAttribute="centerY" secondItem="TpU-gO-2f1" secondAttribute="centerY" id="xc8-rt-meh"/>
+                            <constraint firstItem="wdA-9H-A7E" firstAttribute="centerX" secondItem="Z2f-Tb-FaT" secondAttribute="centerX" id="zP9-RN-Vl7"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="Z2f-Tb-FaT" id="R14-b2-JkJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="305" y="433"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="badgeja" width="1679" height="1679"/>
+    </resources>
 </document>
