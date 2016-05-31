@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-
 @class RHBOrienter;
+
 
 @protocol RHBOrienterDelegate <NSObject>
 
@@ -20,10 +20,25 @@
 
 @interface RHBOrienter : NSObject
 
-//zTrashold between 0 and 1, and angleTrashold from 0 to 22.5, defaults are 0.85 and 12
-- (instancetype)initWithInitialOrientation:(UIDeviceOrientation)initialOrientation zTrashold:(double)zTrashold angleTrashold:(double)angleTrashold;
+/** Params:
+    initialOrientation used only because accelerometer has delay in reporting accelerometer data
+    zAxisThreshold from 0 to 1
+    snappingAngle from 0 to 22.5
+*/
+- (instancetype)initWithInitialOrientation:(UIDeviceOrientation)initialOrientation zAxisThreshold:(double)zAxisThreshold snappingAngle:(double)snappingAngle;
 
+/** Befault init uses:
+    initialOrientation UIDeviceOrientationPortrait
+    zAxisThreshold 0.85
+    snappingAngle 12
+ */
+- (instancetype)init;
+
+
+/// Used to read current estimated device orientation
 @property (nonatomic, readonly) UIDeviceOrientation deviceOrientation;
+
+/// Optional delegate
 @property (nonatomic, weak) id<RHBOrienterDelegate> delegate;
 
 @end

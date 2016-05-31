@@ -10,10 +10,10 @@
 #import <CoreMotion/CoreMotion.h>
 
 
-#define isPortrait(angle, histerezis) (angle >= -3*M_PI_4-histerezis && angle <= -M_PI_4+histerezis)
-#define isRight(angle, histerezis) (angle <= -3*M_PI_4+histerezis || angle >= 3*M_PI_4-histerezis)
-#define isLeft(angle, histerezis) (angle <= M_PI_4+histerezis && angle >= -M_PI_4-histerezis)
-#define isUpsideDown(angle, histerezis) (angle >= M_PI_4-histerezis && angle <= 3*M_PI_4+histerezis)
+#define isPortrait(ANGLE, SNAPPING_ANGLE) (ANGLE >= -3*M_PI_4-SNAPPING_ANGLE && ANGLE <= -M_PI_4+SNAPPING_ANGLE)
+#define isRight(ANGLE, SNAPPING_ANGLE) (ANGLE <= -3*M_PI_4+SNAPPING_ANGLE || ANGLE >= 3*M_PI_4-SNAPPING_ANGLE)
+#define isLeft(ANGLE, SNAPPING_ANGLE) (ANGLE <= M_PI_4+SNAPPING_ANGLE && ANGLE >= -M_PI_4-SNAPPING_ANGLE)
+#define isUpsideDown(ANGLE, SNAPPING_ANGLE) (ANGLE >= M_PI_4-SNAPPING_ANGLE && ANGLE <= 3*M_PI_4+SNAPPING_ANGLE)
 
 
 @interface RHBOrienter ()
@@ -21,20 +21,20 @@
 @property (nonatomic, readonly) CMMotionManager *motionManager;
 @property (nonatomic, readonly) NSOperationQueue *motionQueue;
 @property (nonatomic) UIDeviceOrientation lastKnownOrientation;
-@property (nonatomic, readonly) double zTrashold;
-@property (nonatomic, readonly) double angleTrashold;
+@property (nonatomic, readonly) double zAxisThreshold;
+@property (nonatomic, readonly) double snappingAngle;
 
 @end
 
 
 @implementation RHBOrienter
 
-- (instancetype)initWithInitialOrientation:(UIDeviceOrientation)initialOrientation zTrashold:(double)zTrashold angleTrashold:(double)angleTrashold {
+- (instancetype)initWithInitialOrientation:(UIDeviceOrientation)initialOrientation zAxisThreshold:(double)zAxisThreshold snappingAngle:(double)snappingAngle {
     
     if (self = [super init]) {
         
-        _zTrashold = zTrashold;
-        _angleTrashold = angleTrashold*(M_PI/180);
+        _zAxisThreshold = zAxisThreshold;
+        _snappingAngle = snappingAngle*(M_PI/180);
         _deviceOrientation = initialOrientation;
         _lastKnownOrientation = UIDeviceOrientationUnknown;
         
@@ -63,12 +63,12 @@
 
 - (instancetype)init {
     
-    return [self initWithInitialOrientation:UIDeviceOrientationPortrait zTrashold:0.85 angleTrashold:12];
+    return [self initWithInitialOrientation:UIDeviceOrientationPortrait zAxisThreshold:0.85 snappingAngle:12];
 }
 
 + (UIDeviceOrientation)deviceOrientationWithAngle:(double)angle {
     
-    NSAssert(angle+0.001 >= -M_PI && angle-0.001 <= M_PI, @"valid angle");
+    NSAssert(angle+0.001 >= -M_PI && angle-0.001 <= M_PI, @"valid angle from atan2");
     
     if (isPortrait(angle, 0)) {
         
@@ -85,28 +85,28 @@
         return UIDeviceOrientationLandscapeLeft;
     }
     
-    NSAssert(isUpsideDown(angle, 0), @"upside down");
+    NSAssert(isUpsideDown(angle, 0), @"no other than upside down");
     return UIDeviceOrientationPortraitUpsideDown;
 }
 
 - (UIDeviceOrientation)calculateOrientation:(double)angle {
     
-    if (self.lastKnownOrientation == UIDeviceOrientationPortrait && isPortrait(angle, self.angleTrashold)) {
+    if (self.lastKnownOrientation == UIDeviceOrientationPortrait && isPortrait(angle, self.snappingAngle)) {
         
         return UIDeviceOrientationPortrait;
     }
     
-    if (self.lastKnownOrientation == UIDeviceOrientationLandscapeRight && isRight(angle, self.angleTrashold)) {
+    if (self.lastKnownOrientation == UIDeviceOrientationLandscapeRight && isRight(angle, self.snappingAngle)) {
         
         return UIDeviceOrientationLandscapeRight;
     }
     
-    if (self.lastKnownOrientation == UIDeviceOrientationLandscapeLeft && isLeft(angle, self.angleTrashold)) {
+    if (self.lastKnownOrientation == UIDeviceOrientationLandscapeLeft && isLeft(angle, self.snappingAngle)) {
         
         return UIDeviceOrientationLandscapeLeft;
     }
     
-    if (self.lastKnownOrientation == UIDeviceOrientationPortraitUpsideDown && isUpsideDown(angle, self.angleTrashold)) {
+    if (self.lastKnownOrientation == UIDeviceOrientationPortraitUpsideDown && isUpsideDown(angle, self.snappingAngle)) {
         
         return UIDeviceOrientationPortraitUpsideDown;
     }
@@ -118,7 +118,7 @@
     
     CMAcceleration acceleration = accelerometerData.acceleration;
     
-    if (fabs(acceleration.z) >= self.zTrashold) {
+    if (fabs(acceleration.z) >= self.zAxisThreshold) {
         
         self.lastKnownOrientation = UIDeviceOrientationUnknown;
         return;
@@ -138,16 +138,18 @@
         return;
     }
     
-    if (self.delegate) {
+    _deviceOrientation = newOrientation;
+    
+    if (!self.delegate) {
         
-        __weak RHBOrienter *weakSelf = self;
-        [[NSOperationQueue mainQueue] addOperationWithBlock:^{
-            
-            [weakSelf.delegate didChangeDeviceOrientation:weakSelf oldOrientation:oldOrientation newOrientation:newOrientation];
-        }];
+        return;
     }
     
-    _deviceOrientation = newOrientation;
+    __weak RHBOrienter *weakSelf = self;
+    [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+        
+        [weakSelf.delegate didChangeDeviceOrientation:weakSelf oldOrientation:oldOrientation newOrientation:newOrientation];
+    }];
 }
 
 - (void)dealloc {

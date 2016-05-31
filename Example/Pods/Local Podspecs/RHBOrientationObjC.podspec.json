@@ -1,8 +1,8 @@
 {
   "name": "RHBOrientationObjC",
-  "version": "0.1.1",
-  "summary": "Estiamting device orientation based on accelerometer data.",
-  "description": "Easy to use library for estimating device orientation based on accelerometer data.",
+  "version": "0.1.2",
+  "summary": "Estimating device orientation based on accelerometer data with proper \"orientation snapping\" functionality. Suitable for camera, photo and other applications.",
+  "description": "RHBOrientation is an easy to use and customizable library for estimating device orientation based on accelerometer data. Written in Objective-C. Orientation detection uses PROPERLY designed \"orientation snapping\" algorithm with customizable z-axis and orientation snapping treshold value.",
   "homepage": "https://github.com/sisoje/RHBOrientationObjC",
   "license": {
     "type": "MIT",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/sisoje/RHBOrientationObjC.git",
-    "tag": "0.1.1"
+    "tag": "0.1.2"
   },
   "platforms": {
     "ios": "8.0"

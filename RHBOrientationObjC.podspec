@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RHBOrientationObjC'
-  s.version          = '0.1.1'
-  s.summary          = 'Estiamting device orientation based on accelerometer data.'
+  s.version          = '0.1.2'
+  s.summary          = 'Estimating device orientation based on accelerometer data with proper "orientation snapping" functionality. Suitable for camera, photo and other applications.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-Easy to use library for estimating device orientation based on accelerometer data.
+RHBOrientation is an easy to use and customizable library for estimating device orientation based on accelerometer data. Written in Objective-C. Orientation detection uses PROPERLY designed "orientation snapping" algorithm with customizable z-axis and orientation snapping treshold value.
                        DESC
 
   s.homepage         = 'https://github.com/sisoje/RHBOrientationObjC'
