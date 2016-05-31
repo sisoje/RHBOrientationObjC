@@ -1,0 +1,16 @@
+PODS:
+  - RHBOrientationObjC (0.1.0)
+
+DEPENDENCIES:
+  - RHBOrientationObjC (from `../`)
+
+EXTERNAL SOURCES:
+  RHBOrientationObjC:
+    :path: ../
+
+SPEC CHECKSUMS:
+  RHBOrientationObjC: d3a81d6d3aaecaea187b94a4a868d6387c5a2b9f
+
+PODFILE CHECKSUM: fd178ae424f965e4041f29b00afd82b5ae76de22
+
+COCOAPODS: 1.0.0

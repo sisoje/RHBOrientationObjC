@@ -1,0 +1,22 @@
+{
+  "name": "RHBOrientationObjC",
+  "version": "0.1.0",
+  "summary": "A short description of RHBOrientationObjC.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/RHBOrientationObjC",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Lazar Otasevic": "lazar.otasevic@1und1.de"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/RHBOrientationObjC.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "RHBOrientationObjC/Classes/**/*"
+}

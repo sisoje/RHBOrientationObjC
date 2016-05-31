@@ -1,0 +1,6 @@
+framework module Pods_RHBOrientationObjC_Example {
+  umbrella header "Pods-RHBOrientationObjC_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
