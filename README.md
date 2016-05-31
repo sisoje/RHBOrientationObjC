@@ -5,6 +5,10 @@
 [![License](https://img.shields.io/cocoapods/l/RHBOrientationObjC.svg?style=flat)](http://cocoapods.org/pods/RHBOrientationObjC)
 [![Platform](https://img.shields.io/cocoapods/p/RHBOrientationObjC.svg?style=flat)](http://cocoapods.org/pods/RHBOrientationObjC)
 
+RHBOrientation is an easy to use and customizable Objective-C library for estimating device orientation based on accelerometer data.
+
+Orientation detection uses PROPERLY designed "orientation snapping" algorithm with customizable z-axis and orientation snapping treshold value.
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
