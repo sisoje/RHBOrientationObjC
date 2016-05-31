@@ -10,14 +10,16 @@
 		2165114A81D8607F09BA69D6ED59DDF8 /* Pods-RHBOrientationObjC_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F2BE09CA49690F7AFEC6298A83A2E0D7 /* Pods-RHBOrientationObjC_Tests-dummy.m */; };
 		23EEAC027C7C21CA4F1E2FC7C60BE5F9 /* Pods-RHBOrientationObjC_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 808EC926E387D218D5E16DCD530F10E2 /* Pods-RHBOrientationObjC_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		25F1E14B3BCE576B46F4E808E9AE080F /* RHBOrientationObjC-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 82A3E95A31DF1C22F247AB28D9E144D3 /* RHBOrientationObjC-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		500BEED6DB8612AEA2BB9DD0896D171B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		500BEED6DB8612AEA2BB9DD0896D171B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E8FA5E8C395C60FD3CF005C3EC26B08 /* Foundation.framework */; };
 		6D84153216E3776A1FC748B81FAAD8FC /* RHBOrientationObjC-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 890B18CD78AE72F90288EFBCAAD534CC /* RHBOrientationObjC-dummy.m */; };
+		874DC2B0CC378A2DC40F81824719EA54 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29525446C501751370EC8A36F8FF0C29 /* CoreMotion.framework */; };
 		955C654E2503DE0701F466C3A86BEF92 /* RHBOrienter.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B4E40756B2EE2B284A313B734AA48A /* RHBOrienter.m */; };
 		9AF61F91A61172EF453F97DCE289DD9F /* Pods-RHBOrientationObjC_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D1E8F5C31FA01603A18CE03DBE553844 /* Pods-RHBOrientationObjC_Example-dummy.m */; };
 		C6AED458CD14C25728F9D9EA8657073E /* RHBOrienter.h in Headers */ = {isa = PBXBuildFile; fileRef = D87B33854093529CAA00155594E86227 /* RHBOrienter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D017BFDE1F951FC02C83A38DAF302D60 /* Pods-RHBOrientationObjC_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E36156F613CFE8F329E76776F084604 /* Pods-RHBOrientationObjC_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E66117D1D267156A14692323DCDA8315 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		F1CAAF7947AC17017AE1858D0870D7FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		E98740859DEC80CA69986161BB9B50E1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C962D14B577D0DA5887D6905BF9A76 /* UIKit.framework */; };
+		ED60A7A1876CA371A6CCBA14EBCD1867 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E8FA5E8C395C60FD3CF005C3EC26B08 /* Foundation.framework */; };
+		F1CAAF7947AC17017AE1858D0870D7FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E8FA5E8C395C60FD3CF005C3EC26B08 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,13 +33,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00C962D14B577D0DA5887D6905BF9A76 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		096ED072526701F6AAAF7ABE2501A381 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E8FA5E8C395C60FD3CF005C3EC26B08 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		12C25D420541851915E0594ABB0D92FB /* RHBOrientationObjC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RHBOrientationObjC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		17D1E0E7A77B463195DB7C6966507E3D /* Pods-RHBOrientationObjC_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RHBOrientationObjC_Example-resources.sh"; sourceTree = "<group>"; };
 		1A780151DE3EC80BF882208D008E9055 /* Pods_RHBOrientationObjC_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RHBOrientationObjC_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AAE4358D86F785DCECCA5F40F40620A /* Pods-RHBOrientationObjC_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RHBOrientationObjC_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		1CD0C0A97015F6A69B8B2FD0F6557782 /* RHBOrientationObjC-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RHBOrientationObjC-prefix.pch"; sourceTree = "<group>"; };
 		1F40D17F7BB81988E5611D2509DA2AB5 /* Pods-RHBOrientationObjC_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RHBOrientationObjC_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		29525446C501751370EC8A36F8FF0C29 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
 		3E1E23BE13C0A8A9E7FAF11FF819980B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E2696DAE72884DC35A60BCF5752AA8A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E36156F613CFE8F329E76776F084604 /* Pods-RHBOrientationObjC_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RHBOrientationObjC_Tests-umbrella.h"; sourceTree = "<group>"; };
@@ -53,7 +58,6 @@
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		ABE9C01B7D86A00B9B7F9165E37AA2EA /* Pods-RHBOrientationObjC_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RHBOrientationObjC_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		AE7C8CC48651C48B1FE9E52DF57403D5 /* Pods_RHBOrientationObjC_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RHBOrientationObjC_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D133FFFC78C621DCC6E2E901C5077FF9 /* Pods-RHBOrientationObjC_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RHBOrientationObjC_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		D1E8F5C31FA01603A18CE03DBE553844 /* Pods-RHBOrientationObjC_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RHBOrientationObjC_Example-dummy.m"; sourceTree = "<group>"; };
 		D87B33854093529CAA00155594E86227 /* RHBOrienter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RHBOrienter.h; sourceTree = "<group>"; };
@@ -67,6 +71,16 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		412CECCC37A2AE4657A48F2FD0922EF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				874DC2B0CC378A2DC40F81824719EA54 /* CoreMotion.framework in Frameworks */,
+				ED60A7A1876CA371A6CCBA14EBCD1867 /* Foundation.framework in Frameworks */,
+				E98740859DEC80CA69986161BB9B50E1 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7CA8D5EFA2BE372C37F22F8376FC29F6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -83,17 +97,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BFE49FA501335C137AB9D32878F84DA8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E66117D1D267156A14692323DCDA8315 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03DF9FE1068F777A4C1F0AAF0030CC02 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				29525446C501751370EC8A36F8FF0C29 /* CoreMotion.framework */,
+				0E8FA5E8C395C60FD3CF005C3EC26B08 /* Foundation.framework */,
+				00C962D14B577D0DA5887D6905BF9A76 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03DF9FE1068F777A4C1F0AAF0030CC02 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3B544002353663D209C3C59924BDB769 /* Pods-RHBOrientationObjC_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -110,14 +134,6 @@
 			);
 			name = "Pods-RHBOrientationObjC_Example";
 			path = "Target Support Files/Pods-RHBOrientationObjC_Example";
-			sourceTree = "<group>";
-		};
-		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 		570B8AAFE87192E2B73D9ED10DFF38C3 /* Support Files */ = {
@@ -148,7 +164,7 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC1627745F2011C5B605EF9BAE51F195 /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
 				FA72E8CDEC5328DBA1664310F165766F /* Products */,
 				DEDC2E7327B2EAC110903CFB083B28C0 /* Targets Support Files */,
 			);
@@ -160,14 +176,6 @@
 				E9B4BCCDC7189D1192F862E3030DAEA1 /* RHBOrientationObjC */,
 			);
 			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		DEDC2E7327B2EAC110903CFB083B28C0 /* Targets Support Files */ = {
@@ -261,7 +269,7 @@
 			buildConfigurationList = DA0E9D2180447A654B26FBFDF445081E /* Build configuration list for PBXNativeTarget "RHBOrientationObjC" */;
 			buildPhases = (
 				646FC9988F65036597DC29F35610E94F /* Sources */,
-				BFE49FA501335C137AB9D32878F84DA8 /* Frameworks */,
+				412CECCC37A2AE4657A48F2FD0922EF2 /* Frameworks */,
 				A5907B721F8F267180517D9DC0F7E59A /* Headers */,
 			);
 			buildRules = (

@@ -1,5 +1,5 @@
 PODS:
-  - RHBOrientationObjC (0.1.0)
+  - RHBOrientationObjC (0.1.1)
 
 DEPENDENCIES:
   - RHBOrientationObjC (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  RHBOrientationObjC: b58ad923e65d064afbddbf31577e4fe57d888816
+  RHBOrientationObjC: 4d41af499006e1a9d9957abef6bdf458a06239a3
 
 PODFILE CHECKSUM: fd178ae424f965e4041f29b00afd82b5ae76de22
 

@@ -1,6 +1,6 @@
 {
   "name": "RHBOrientationObjC",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "summary": "Estiamting device orientation based on accelerometer data.",
   "description": "Easy to use library for estimating device orientation based on accelerometer data.",
   "homepage": "https://github.com/sisoje/RHBOrientationObjC",
@@ -13,10 +13,14 @@
   },
   "source": {
     "git": "https://github.com/sisoje/RHBOrientationObjC.git",
-    "tag": "0.1.0"
+    "tag": "0.1.1"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "RHBOrientationObjC/Classes/**/*"
+  "source_files": "RHBOrientationObjC/Classes/**/*",
+  "frameworks": [
+    "UIKit",
+    "CoreMotion"
+  ]
 }
