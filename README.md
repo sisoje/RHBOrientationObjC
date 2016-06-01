@@ -9,24 +9,45 @@
 
 RHBOrientation is an easy to use and customizable Objective-C library for estimating device orientation based on accelerometer data.
 
+RHBOrientation uses raw accelerometer data to detect current phone orientation, and it works even when device is in "Orientation Lock" mode.
+
 Orientation detection uses PROPERLY designed "orientation snapping" algorithm with customizable z-axis and orientation snapping treshold value.
 
 ## Usage
+
+Import RHBOrientationObjC header file:
+
+```objc
+    #import "RHBOrientation.h"
+```
+
 Initialize orientation detection (for example in viewDidLoad) in your view controller:
 
+```objc
     self.orienter = [RHBOrienter new];
-    self.orienter.delegate = self;
+```
 
 Obtain orientation anytime using:
 
+```objc
 	self.orienter.deviceOrientation
-	
-Optionally implement delegate method to get notifications whenever orientation changes.
+```
 
+Optionally setup delegate and implement delegate method to get notifications whenever orientation changes.
+
+```objc
+    self.orienter.delegate = self;
+```
+
+Your class must comply to RHBOrienterDelegate protocol and implement method:
+
+```objc
+    - (void)didChangeDeviceOrientation:(RHBOrienter *)orienter oldOrientation:(UIDeviceOrientation)oldOrientation newOrientation:(UIDeviceOrientation)newOrientation;
+```
 
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+Clone the repo, and open Example/RHBOrientationObjC.xcodeproj. Orientation detection does not work in Simulator, since simulator does not support accelerometer.
 
 ## Installation
 
