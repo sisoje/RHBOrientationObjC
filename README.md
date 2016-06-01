@@ -39,6 +39,8 @@ pod "RHBOrientationObjC"
 
 Lazar Otasevic, redhotbits@gmail.com
 
+![alt tag](https://pbs.twimg.com/profile_images/1017152638/rhbt1_400x400.png)
+
 ## License
 
 RHBOrientationObjC is available under the MIT license. See the LICENSE file for more info.
