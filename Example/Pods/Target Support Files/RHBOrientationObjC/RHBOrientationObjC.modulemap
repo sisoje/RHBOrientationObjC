@@ -1,6 +1,0 @@
-framework module RHBOrientationObjC {
-  umbrella header "RHBOrientationObjC-umbrella.h"
-
-  export *
-  module * { export * }
-}
