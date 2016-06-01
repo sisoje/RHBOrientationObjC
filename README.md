@@ -1,3 +1,5 @@
+->![alt tag](https://raw.githubusercontent.com/sisoje/RHBOrientationObjC/master/Example/RHBOrientationObjC/Images.xcassets/logo.imageset/logo.png)<-
+
 # RHBOrientationObjC
 
 [![CI Status](http://img.shields.io/travis/Lazar Otasevic/RHBOrientationObjC.svg?style=flat)](https://travis-ci.org/Lazar Otasevic/RHBOrientationObjC)
@@ -38,8 +40,6 @@ pod "RHBOrientationObjC"
 ## Author
 
 Lazar Otasevic, redhotbits@gmail.com
-
-![alt tag](https://pbs.twimg.com/profile_images/1017152638/rhbt1_400x400.png)
 
 ## License
 
