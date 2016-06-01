@@ -1,4 +1,4 @@
-->![alt tag](https://raw.githubusercontent.com/sisoje/RHBOrientationObjC/master/Example/RHBOrientationObjC/Images.xcassets/logo.imageset/logo.png)<-
+![alt tag](https://raw.githubusercontent.com/sisoje/RHBOrientationObjC/master/Example/RHBOrientationObjC/Images.xcassets/logo.imageset/logo.png)
 
 # RHBOrientationObjC
 
