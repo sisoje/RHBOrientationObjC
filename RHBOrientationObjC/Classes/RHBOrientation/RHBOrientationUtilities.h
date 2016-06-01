@@ -9,12 +9,10 @@
 #import <AVFoundation/AVFoundation.h>
 #import <UIKit/UIKit.h>
 
-#import "RHBSnippets.h"
-
 
 @interface RHBOrientationUtilities : NSObject
 
-RHB_SINGLETON_INTERFACE();
++(instancetype)sharedInstance;
 
 - (CGFloat)rotationAngleWithDeviceOrientation:(UIDeviceOrientation)deviceOrientation;
 - (AVCaptureVideoOrientation)videoOrientationWithDeviceOrientation:(UIDeviceOrientation)deviceOrientation;

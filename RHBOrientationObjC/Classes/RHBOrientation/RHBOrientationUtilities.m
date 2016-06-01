@@ -19,7 +19,7 @@
 
 @implementation RHBOrientationUtilities
 
-RHB_SINGLETON_IMPLEMENTATION();
++(instancetype)sharedInstance {static dispatch_once_t pred;static id sharedObject;dispatch_once(&pred,^{sharedObject=[self new];});return sharedObject;}
 
 - (instancetype)init {
     

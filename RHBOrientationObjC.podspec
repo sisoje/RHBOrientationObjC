@@ -38,5 +38,5 @@ RHBOrientation is an easy to use and customizable library for estimating device 
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit', 'CoreMotion', 'AVFoundation'
-  s.dependency 'RHBSnippetsObjC'
+  # s.dependency 'RHBSnippetsObjC'
 end
