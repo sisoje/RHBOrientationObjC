@@ -36,6 +36,7 @@
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		A89489231CFF7105001390CF /* RHBSnippets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHBSnippets.h; sourceTree = "<group>"; };
 		ACF03FB81CFE62710032AAC3 /* RHBOrientationUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHBOrientationUtilities.h; sourceTree = "<group>"; };
 		ACF03FB91CFE62710032AAC3 /* RHBOrientationUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHBOrientationUtilities.m; sourceTree = "<group>"; };
 		ACF03FBA1CFE62710032AAC3 /* RHBOrienter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHBOrienter.h; sourceTree = "<group>"; };
@@ -62,6 +63,7 @@
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
+				A89489221CFF7105001390CF /* RHBSnippetsObjC */,
 				A80FBC051CFE7011000BE191 /* RHBOrientationObjC */,
 				6003F593195388D20070C39A /* Example */,
 				6003F58C195388D20070C39A /* Frameworks */,
@@ -122,6 +124,15 @@
 				ACF03FB51CFE62710032AAC3 /* Classes */,
 			);
 			name = RHBOrientationObjC;
+			sourceTree = "<group>";
+		};
+		A89489221CFF7105001390CF /* RHBSnippetsObjC */ = {
+			isa = PBXGroup;
+			children = (
+				A89489231CFF7105001390CF /* RHBSnippets.h */,
+			);
+			name = RHBSnippetsObjC;
+			path = ../RHBSnippetsObjC;
 			sourceTree = "<group>";
 		};
 		ACF03FB51CFE62710032AAC3 /* Classes */ = {

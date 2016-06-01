@@ -19,6 +19,8 @@
 
 @implementation RHBOrientationUtilities
 
+RHB_SINGLETON_IMPLEMENTATION();
+
 - (instancetype)init {
     
     if (self = [super init]) {
@@ -39,28 +41,25 @@
     return self;
 }
 
-+ (instancetype)sharedInstance {
+- (CGFloat)rotationAngleWithDeviceOrientation:(UIDeviceOrientation)deviceOrientation {
     
-    static dispatch_once_t pred;
-    static id sharedObject;
-    dispatch_once(&pred, ^{sharedObject = [self new];});
-    return sharedObject;
-}
-
-+ (CGFloat)rotationAngleWithDeviceOrientation:(UIDeviceOrientation)deviceOrientation {
-    
-    NSNumber *rotationAngle = [RHBOrientationUtilities sharedInstance].rotationAngleByDeviceOrientation[@(deviceOrientation)];
+    NSNumber *rotationAngle = self.rotationAngleByDeviceOrientation[@(deviceOrientation)];
     NSAssert(rotationAngle, @"has to be maped");
     
     return rotationAngle.floatValue;
 }
 
-+ (AVCaptureVideoOrientation)videoOrientationWithDeviceOrientation:(UIDeviceOrientation)deviceOrientation {
+- (AVCaptureVideoOrientation)videoOrientationWithDeviceOrientation:(UIDeviceOrientation)deviceOrientation {
     
-    NSNumber *videoOrientation = [RHBOrientationUtilities sharedInstance].videoOrientationByDeviceOrientation[@(deviceOrientation)];
+    NSNumber *videoOrientation = self.videoOrientationByDeviceOrientation[@(deviceOrientation)];
     NSAssert(videoOrientation, @"has to be maped");
     
     return videoOrientation.integerValue;
+}
+
+- (CGAffineTransform)transformationWithDeviceOrientation:(UIDeviceOrientation)deviceOrientation {
+    
+    return CGAffineTransformMakeRotation([self rotationAngleWithDeviceOrientation:deviceOrientation]);
 }
 
 @end

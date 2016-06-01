@@ -32,11 +32,11 @@
 
 -(void)didChangeDeviceOrientation:(RHBOrienter *)orienter oldOrientation:(UIDeviceOrientation)oldOrientation newOrientation:(UIDeviceOrientation)newOrientation {
     
-    CGFloat rotationAngle = [RHBOrientationUtilities rotationAngleWithDeviceOrientation:newOrientation];
+    CGAffineTransform transform = [[RHBOrientationUtilities sharedInstance] transformationWithDeviceOrientation:newOrientation];
     
     [UIView animateWithDuration:0.3 animations:^{
         
-        self.imageView.transform = CGAffineTransformMakeRotation(rotationAngle);
+        self.imageView.transform = transform;
     }];
 }
 
