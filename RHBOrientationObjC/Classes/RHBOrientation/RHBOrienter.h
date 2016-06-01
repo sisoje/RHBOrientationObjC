@@ -27,15 +27,15 @@
 */
 - (instancetype)initWithInitialOrientation:(UIDeviceOrientation)initialOrientation zAxisThreshold:(double)zAxisThreshold snappingAngle:(double)snappingAngle;
 
-/** Befault init uses:
-    initialOrientation UIDeviceOrientationPortrait
-    zAxisThreshold 0.85
-    snappingAngle 12
+/** Default init uses:
+    initialOrientation = UIDeviceOrientationPortrait
+    zAxisThreshold = 0.85
+    snappingAngle = 12
  */
 - (instancetype)init;
 
 
-/// Used to read current estimated device orientation
+/// Current estimated device orientation
 @property (nonatomic, readonly) UIDeviceOrientation deviceOrientation;
 
 /// Optional delegate
