@@ -62,6 +62,7 @@
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
+				A80FBC051CFE7011000BE191 /* RHBOrientationObjC */,
 				6003F593195388D20070C39A /* Example */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
@@ -107,13 +108,20 @@
 		6003F594195388D20070C39A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				ACF03FB51CFE62710032AAC3 /* Classes */,
 				6003F595195388D20070C39A /* RHBOrientationObjC-Info.plist */,
 				6003F596195388D20070C39A /* InfoPlist.strings */,
 				6003F599195388D20070C39A /* main.m */,
 				6003F59B195388D20070C39A /* RHBOrientationObjC-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A80FBC051CFE7011000BE191 /* RHBOrientationObjC */ = {
+			isa = PBXGroup;
+			children = (
+				ACF03FB51CFE62710032AAC3 /* Classes */,
+			);
+			name = RHBOrientationObjC;
 			sourceTree = "<group>";
 		};
 		ACF03FB51CFE62710032AAC3 /* Classes */ = {
@@ -123,7 +131,7 @@
 				ACF03FBC1CFE62710032AAC3 /* RHBOrientation.h */,
 			);
 			name = Classes;
-			path = ../../RHBOrientationObjC/Classes;
+			path = ../RHBOrientationObjC/Classes;
 			sourceTree = "<group>";
 		};
 		ACF03FB71CFE62710032AAC3 /* RHBOrientation */ = {
