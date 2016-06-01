@@ -9,9 +9,9 @@
 
 RHBOrientation is an easy to use and customizable Objective-C library for estimating device orientation based on accelerometer data.
 
-RHBOrientation uses raw accelerometer data to detect current phone orientation, and it works even when device is in "Orientation Lock" mode.
+RHBOrientation uses raw accelerometer data to detect current phone orientation, and it works even when device is in Orientation-Lock mode.
 
-Orientation detection uses PROPERLY designed "orientation snapping" algorithm with customizable z-axis and orientation snapping treshold value.
+Orientation detection uses PROPERLY designed Orientation-Snapping algorithm with customizable z-axis and orientation snapping treshold value.
 
 ## Usage
 
