@@ -6,8 +6,8 @@
 //
 //
 
-@import UIKit;
-@import AVFoundation;
+#import <AVFoundation/AVFoundation.h>
+#import <UIKit/UIKit.h>
 
 #import "RHBSnippets.h"
 
