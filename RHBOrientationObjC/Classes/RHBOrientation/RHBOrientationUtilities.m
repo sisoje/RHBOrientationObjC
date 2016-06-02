@@ -7,6 +7,7 @@
 //
 
 #import "RHBOrientationUtilities.h"
+#import "RHBSnippets.h"
 
 
 @interface RHBOrientationUtilities ()
