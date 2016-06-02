@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RHBOrientationObjC'
-  s.version          = '0.2'
+  s.version          = '0.2.1'
   s.summary          = 'Estimating device orientation based on accelerometer data with "orientation snapping". Great for camera and photo apps.'
 
 # This description is used to generate tags and improve search results.
@@ -38,5 +38,5 @@ RHBOrientation is an easy to use and customizable library for estimating device 
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit', 'CoreMotion', 'AVFoundation'
-  # s.dependency 'RHBSnippetsObjC'
+  s.dependency 'RHBSnippetsObjC'
 end

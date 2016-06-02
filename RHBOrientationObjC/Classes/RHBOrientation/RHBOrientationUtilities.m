@@ -7,6 +7,7 @@
 //
 
 #import "RHBOrientationUtilities.h"
+#import "RHBSnippets.h"
 
 
 @interface RHBOrientationUtilities ()
@@ -19,7 +20,7 @@
 
 @implementation RHBOrientationUtilities
 
-+(instancetype)sharedInstance {static dispatch_once_t pred;static id sharedObject;dispatch_once(&pred,^{sharedObject=[self new];});return sharedObject;}
+RHB_SINGLETON_IMPLEMENTATION();
 
 - (instancetype)init {
     
