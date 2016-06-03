@@ -12,7 +12,7 @@
 
 @interface RHBOrientationUtilities : NSObject
 
-+(instancetype)sharedInstance;
++ (instancetype)sharedInstance;
 
 - (CGFloat)rotationAngleWithDeviceOrientation:(UIDeviceOrientation)deviceOrientation;
 - (AVCaptureVideoOrientation)videoOrientationWithDeviceOrientation:(UIDeviceOrientation)deviceOrientation;
