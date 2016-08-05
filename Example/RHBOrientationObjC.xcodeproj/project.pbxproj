@@ -36,7 +36,7 @@
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		A89489271CFF8366001390CF /* RHBSnippets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHBSnippets.h; sourceTree = "<group>"; };
+		A82C75A11D54E06500A17CC9 /* RHBSnippets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RHBSnippets.h; path = Pods/RHBSnippetsObjC/RHBSnippets.h; sourceTree = SOURCE_ROOT; };
 		ACF03FB81CFE62710032AAC3 /* RHBOrientationUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHBOrientationUtilities.h; sourceTree = "<group>"; };
 		ACF03FB91CFE62710032AAC3 /* RHBOrientationUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHBOrientationUtilities.m; sourceTree = "<group>"; };
 		ACF03FBA1CFE62710032AAC3 /* RHBOrienter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHBOrienter.h; sourceTree = "<group>"; };
@@ -129,7 +129,7 @@
 		A89489261CFF8366001390CF /* RHBSnippetsObjC */ = {
 			isa = PBXGroup;
 			children = (
-				A89489271CFF8366001390CF /* RHBSnippets.h */,
+				A82C75A11D54E06500A17CC9 /* RHBSnippets.h */,
 			);
 			path = RHBSnippetsObjC;
 			sourceTree = "<group>";

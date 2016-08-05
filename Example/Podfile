@@ -1,0 +1,5 @@
+use_frameworks!
+
+target 'RHBOrientationObjC_Example' do
+pod 'RHBSnippetsObjC'
+end

@@ -18,7 +18,8 @@ DerivedData
 *.ipa
 
 ### Cocoa Pods ###
-Pods
+Example/Pods/*.*
+Example/Pods/Target*
 Podfile.lock
 *.xcworkspace
 
