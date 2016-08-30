@@ -65,7 +65,7 @@
 
 - (instancetype)init {
     
-    return [self initWithInitialOrientation:UIDeviceOrientationPortrait zAxisThreshold:0.85 snappingAngle:12];
+    return self = [self initWithInitialOrientation:UIDeviceOrientationPortrait zAxisThreshold:0.85 snappingAngle:12];
 }
 
 + (UIDeviceOrientation)deviceOrientationWithAngle:(double)angle {
