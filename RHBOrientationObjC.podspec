@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RHBOrientationObjC'
-  s.version          = '0.2.4.1'
+  s.version          = '0.2.4.3'
   s.summary          = 'Estimating device orientation based on accelerometer data with "orientation snapping". Great for camera and photo apps.'
 
 # This description is used to generate tags and improve search results.
@@ -25,7 +25,7 @@ RHBOrientation is an easy to use and customizable library for estimating device 
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Lazar Otasevic' => 'redhotbits@gmail.com' }
-  s.source           = { :git => 'https://github.com/sisoje/RHBOrientationObjC.git', :tag => '0.2.4.1' }
+  s.source           = { :git => 'https://github.com/sisoje/RHBOrientationObjC.git', :tag => '0.2.4.3' }
   s.social_media_url = 'https://twitter.com/redhotbits'
 
   s.ios.deployment_target = '8.0'
