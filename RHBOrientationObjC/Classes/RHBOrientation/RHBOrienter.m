@@ -43,7 +43,7 @@
         _motionQueue = [NSOperationQueue new];
         _motionQueue.maxConcurrentOperationCount = 1;
         
-        _motionManager = [[CMMotionManager alloc] init];
+        _motionManager = [CMMotionManager new];
         __weak typeof(self) weakSelf = self;
         [_motionManager startAccelerometerUpdatesToQueue:_motionQueue withHandler:^(CMAccelerometerData *accelerometerData, NSError *error) {
             
